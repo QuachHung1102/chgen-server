@@ -1,0 +1,121 @@
+.help__section {
+  margin-top: $mg-70;
+  .help__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $mg-40 auto;
+    width: 80%;
+    h2 {
+      font-family: "Brygada 1918";
+      @include styleText($color-black-0, $fs-40, $fw-700);
+      span {
+        color: $color-blue-0;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .help__body {
+    .help__body__content {
+      margin: auto;
+      width: 80%;
+      .help__body__item {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 37vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .help__body__head {
+          direction: rtl;
+          .help__body__head__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 1px solid $color-black-0;
+            margin-top: $mg-10;
+          }
+        }
+      }
+    }
+  }
+  .help__form {
+    .help__form__banner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: $mg-40 auto;
+      width: 80%;
+      .text1 {
+        font-family: "Brygada 1918";
+        @include styleText($color-black-0, $fs-40, $fw-700);
+      }
+      .text2 {
+        font-family: "Brygada 1918";
+        @include styleText($color-blue-0, $fs-40, $fw-700);
+      }
+    }
+    .help__form__content {
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      form {
+        height: 50px;
+        border: 1px solid $color-blue-0;
+        border-radius: $border-radius-55px;
+        background-color: $color-blue-1;
+        width: 50%;
+        .help__form__icon {
+          border: 1px solid $color-blue-0;
+          padding: $pd-5 $pd-5 + 3;
+          border-radius: 50%;
+          background-color: #ffead5;
+        }
+        .btn--helpForm {
+          background-color: $color-yelow-0;
+          border: 1px solid $color-yelow-0;
+          border-radius: $border-radius-55px;
+          padding: $pd-5 $pd-15;
+        }
+        #getUserMail {
+          color: $color-black-0;
+          border: none;
+          background-color: #d2e8f0;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .help__form__decor {
+    margin: $mg-70 0;
+    background-color: $color-blue-0;
+    height: 100px;
+    .help__form__decor__content {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      .help__form__decor__item {
+        transform: rotate(-1.5deg);
+        transform-origin: center center;
+        p {
+          @include styleText($color-black-0, $fs-24, $fw-400);
+          span {
+            margin: $mg-10 $mg-20;
+          }
+          i {
+            color: $color-yelow-0;
+          }
+        }
+      }
+    }
+  }
+}

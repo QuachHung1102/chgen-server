@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="../css/owl.carousel.css" />
+  <link rel="stylesheet" href="../css/owl.theme.default.css" />
+  <!-- BS5 -->
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css" />
+  <!-- font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Brygada+1918:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.5.1-web/css/fontawesome.css" />
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.5.1-web/css/brands.css" />
+  <link rel="stylesheet" href="../assets/fontawesome-free-6.5.1-web/css/solid.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>Genetic Library</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="myNavbar navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid d-block px-0 px-3">
+        <div class="row justify-content-between">
+          <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-4 pt-5 pb-2">
+            <div class="myNavbar__left">
+              <a class="navbar-brand" href="#">
+                <img src="../img/CHGEN.png" alt="CHGen">
+              </a>
+            </div>
+          </div>
+          <div class="d-lg-none col-3 col-sm-2 d-flex justify-content-end align-items-end pb-2">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-8 ps-0 d-flex justify-content-end">
+            <div class="myNavbar__right">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Sức khỏe sinh sản
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="/api/v1/education/reproductiveHeath-vn">Sàng lọc trước sinh</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sàng lọc gen lặn</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Sàng lọc sau sinh</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Thư viện di truyền học
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="/api/v1/genetics-library/basic-genetic-vn">Di truyền học cơ
+                          bản</a>
+                      </li>
+                      <li><a class="dropdown-item" href="/api/v1/genetics-library/chromosome-list-vn">Nhiễm sắc thể</a>
+                      </li>
+                      <li><a class="dropdown-item" href="/pages/genetic-library.html">Gen</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/api/v1/genetics-disease/disease-home-vn">Bệnh di truyền</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/api/v1/testing-facility-vn">Cơ sở xét nghiệm</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="/img/america.png" alt="ameria flag">
+                    </a>
+                    <ul class="dropdown-menu dropdown-language" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#">Việt</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Anh</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Help -->
+  <section class="help__section">
+    <div class="help__head d-flex justify-content-center">
+      <h2><span>Thư viện</span> Di truyền học</h2>
+    </div>
+    <div class="help__body">
+      <div class="help__body__content row">
+        <div class="help__body__item col-4" style="background-image: url('../img/help1.png')">
+          <!-- <div class="help__body__head">
+              <div class="help__body__head__icon">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+            <div>
+              <h3>Di truyền học cơ bản</h3>
+            </div> -->
+        </div>
+        <div class="help__body__item col-4" style="background-image: url('../img/help2.png')">
+          <!-- <div class="help__body__head">
+              <div class="help__body__head__icon">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+            <div>
+              <h3>Nhiễm sắc thể</h3>
+            </div> -->
+        </div>
+        <div class="help__body__item col-4" style="background-image: url('../img/help3.png')">
+          <!-- <div class="help__body__head">
+              <div class="help__body__head__icon">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+            </div>
+            <div>
+              <h3>Gen</h3>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Library -->
+  <section class="genetic-library">
+    <div class="container">
+      <div class="genetic-library-content d-flex flex-column align-items-center justify-content-center row-gap-5">
+        <div class="generic-library-item row">
+          <div class="col-12 col-md-5 generic-library-img-item">
+            <img src="../img/genetic-library-1.png" alt="">
+          </div>
+          <div class="col-12 col-md-7 generic-library-text">
+            <h4>Hội chứng Down</h4>
+            <p>Hội chứng Down hay Trisomy 21 là dạng bất thường nhiễm sắc thể phổ biến nhất, gây ra dị tật ở nhiều bộ
+              phận
+              trên cơ thể. Người bệnh bị thiểu năng trí tuệ, có vẻ mặt đặc trưng và trương lực cơ yếu ở trẻ sơ sinh.
+            </p>
+          </div>
+        </div>
+        <div class="generic-library-item row">
+          <div class="col-12 col-md-5 generic-library-img-item">
+            <img src="../img/genetic-library-2.png" alt="">
+          </div>
+          <div class="col-12 col-md-7 generic-library-text">
+            <h4>Di truyền và đặc điểm của con người</h4>
+            <p>... di truyền khác cũng có thể ảnh hưởng đến sức khỏe của con người. Chính vì vậy, việc nghiên cứu và
+              hiểu rõ các đặc điểm di truyền liên quan đến sức khỏe là ...</p>
+          </div>
+        </div>
+        <div class="generic-library-item row">
+          <div class="col-12 col-md-5 generic-library-img-item">
+            <img src="../img/genetic-library-3.png" alt="">
+          </div>
+          <div class="col-12 col-md-7 generic-library-text">
+            <h4>Tế bào là gì?</h4>
+            <p>Thiếu tetrahydrobiopterin (tetrahydrobiopterin deficiency) là bệnh di truyền khiến cơ thể người bệnh giảm
+              lượng tetrahydrobiopterin (BH4), từ đó nồng độ phenylalanine trong máu tăng lên. Phenylalanine là axit
+              amin…</p>
+          </div>
+        </div>
+        <div class="generic-library-item row">
+          <div class="col-12 col-md-5 generic-library-img-item">
+            <img src="../img/genetic-library-4.png" alt="">
+          </div>
+          <div class="col-12 col-md-7 generic-library-text">
+            <h4>Gen hoạt động như thế nào?</h4>
+            <p>Quá trình kích hoạt gen hoạt động hoặc bất hoạt gen được gọi là cơ chế điều hòa hoạt động gen. ... Gen
+              chỉ dẫn sản xuất protein như thế nào? Gen được tắt hay mở ...</p>
+          </div>
+        </div>
+        <div class="generic-library-item row">
+          <div class="col-12 col-md-5 generic-library-img-item">
+            <img src="../img/genetic-library-5.png" alt="">
+          </div>
+          <div class="col-12 col-md-7 generic-library-text">
+            <h4>Hội chứng Turner</h4>
+            <p>Hội chứng Turner là một bệnh di truyền do bất thường về số lượng tại cặp nhiễm sắc thể giới tính. Đặc
+              điểm chung nhất của hội chứng Turner là tầm vóc thấp bé, biểu hiện rõ ràng vào khoảng 5 tuổi. Tình trạng
+              mất chức năng buồng trứng sớm cũng rất phổ biến.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container row ">
+      <div class="col-5 p-0 footer1">
+        <svg xmlns="http://www.w3.org/2000/svg" width="158" height="36" viewBox="0 0 158 36" fill="none">
+          <path
+            d="M152.567 11.7979H158.009V34.0936H152.601L146.478 24.654C146.002 23.9026 145.605 23.2686 145.288 22.752C144.97 22.2354 144.676 21.7188 144.404 21.2022C144.131 20.6856 143.825 20.0751 143.485 19.3707L143.383 19.5115C143.701 20.6387 143.893 21.6953 143.961 22.6815C144.029 23.6443 144.063 24.5836 144.063 25.4993V34.0936H138.621V11.7979H144.029L150.152 21.2374C150.628 21.9654 151.025 22.5994 151.342 23.1394C151.66 23.656 151.955 24.1726 152.227 24.6892C152.499 25.2058 152.805 25.8163 153.145 26.5208L153.247 26.3799C153.02 25.3937 152.85 24.4427 152.737 23.5269C152.623 22.5876 152.567 21.6601 152.567 20.7443V11.7979Z"
+            fill="#F9B800" />
+          <path
+            d="M107.181 34.543V0.647461H132.348V7.60863H115.748V14.0343H130.153V20.9955H115.748V27.5818H132.348V34.543H107.181Z"
+            fill="#F9B800" />
+          <path
+            d="M92.1724 24.5296C92.1724 23.3516 92.226 22.2806 92.3331 21.3168L92.226 21.1561C91.2264 21.2989 90.1376 21.406 88.9596 21.4774C87.7816 21.5131 86.6928 21.5131 85.6932 21.4774V14.5162L99.6691 14.4627V32.6688C98.027 33.4185 96.1528 34.0075 94.0466 34.4359C91.9761 34.8286 89.3344 35.0249 86.1216 35.0249C81.8378 35.0249 78.4822 34.4537 76.0547 33.3114C73.6272 32.1333 71.9137 30.2592 70.9141 27.6889C69.9146 25.0829 69.4148 21.6202 69.4148 17.3007C69.4148 13.8023 69.8075 10.9286 70.5928 8.67957C71.4139 6.43057 72.5919 4.69921 74.127 3.48547C75.6977 2.23603 77.6075 1.37927 79.8565 0.915191C82.1055 0.415415 84.6758 0.165527 87.5674 0.165527C89.2809 0.165527 90.9944 0.236924 92.7079 0.379717C94.4571 0.522511 96.1885 0.790248 97.902 1.18293V8.25119L97.7414 8.35828C96.242 8.0013 94.7427 7.75141 93.2434 7.60862C91.7798 7.46582 90.2983 7.39443 88.799 7.39443C86.6214 7.39443 84.7115 7.62647 83.0694 8.09054C81.463 8.51892 80.2135 9.42923 79.3211 10.8215C78.4286 12.2137 77.9824 14.3734 77.9824 17.3007C77.9824 20.1923 78.2144 22.4056 78.6785 23.9406C79.1783 25.4399 80.0886 26.4752 81.4094 27.0463C82.766 27.5818 84.6937 27.8495 87.1925 27.8495C87.5138 27.8495 88.0136 27.8495 88.6919 27.8495C89.3701 27.8138 90.0484 27.7781 90.7267 27.7424C91.4049 27.7067 91.8869 27.6532 92.1724 27.5818V24.5296Z"
+            fill="#F9B800" />
+          <path
+            d="M41.0515 34.543H32.4839V0.647461H41.0515V13.6059H53.9029V0.647461H62.4704V34.543H53.9029V20.5671H41.0515V34.543Z"
+            fill="#F9B800" />
+          <path
+            d="M26.3453 27.207V33.9539C24.6318 34.3109 22.954 34.5787 21.3119 34.7572C19.6698 34.9356 17.7242 35.0249 15.4752 35.0249C12.5836 35.0249 10.1383 34.775 8.13921 34.2752C6.1758 33.7755 4.58723 32.9008 3.37349 31.6514C2.19544 30.3663 1.33869 28.5635 0.803211 26.2431C0.267737 23.9227 0 20.9419 0 17.3007C0 13.8023 0.267737 10.9286 0.803211 8.67957C1.33869 6.43057 2.19544 4.69921 3.37349 3.48547C4.58723 2.23603 6.1758 1.37927 8.13921 0.915191C10.1383 0.415415 12.5836 0.165527 15.4752 0.165527C17.7242 0.165527 19.6698 0.254773 21.3119 0.433264C22.954 0.576058 24.6318 0.843794 26.3453 1.23647V8.19764L26.1847 8.30474C24.6854 7.94775 23.2396 7.69786 21.8473 7.55507C20.4551 7.37658 18.7416 7.28733 16.7068 7.28733C15.0647 7.28733 13.7081 7.41228 12.6372 7.66216C11.6019 7.87636 10.7809 8.32258 10.174 9.00085C9.56714 9.67912 9.13876 10.6787 8.88887 11.9995C8.67468 13.3203 8.56759 15.0874 8.56759 17.3007C8.56759 19.6211 8.67468 21.4952 8.88887 22.9232C9.13876 24.3154 9.56714 25.3685 10.174 26.0825C10.7809 26.7964 11.6019 27.2784 12.6372 27.5283C13.7081 27.7781 15.0647 27.9031 16.7068 27.9031C18.7059 27.9031 20.4016 27.8495 21.7938 27.7424C23.2217 27.5997 24.6497 27.3498 26.0776 26.9928L26.3453 27.207Z"
+            fill="#F9B800" />
+        </svg>
+        <p>Website sưu tầm tổng hợp thông tin về Di truyền học và sự ảnh hưởng của di truyền tới Sức khỏe sinh sản tại
+          Việt Nam.</p>
+        <div class="d-flex column-gap-2 footer1__icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="col-4 p-0 row">
+        <div class="footer__dieuhung p-0 col-6">
+          <h4>Điều hướng</h4>
+          <p class="footer__dieuhuong__text"><a href="">Trang chủ</a></p>
+          <p class="footer__dieuhuong__text"><a href="">Sức khỏe và sinh sản</a></p>
+          <p class="footer__dieuhuong__text"><a href="">Thư viện di truyền học</a></p>
+          <p class="footer__dieuhuong__text"><a href="">Bệnh di truyền</a></p>
+          <p class="footer__dieuhuong__text"><a href="">Cơ sở xét nghiệm</a></p>
+        </div>
+        <div class="footer__lienlac p-0 col-6">
+          <h4>Liên lạc</h4>
+          <p class="footer__lienlac__text"><a href="">+84 234 56789</a></p>
+          <p class="footer__lienlac__text"><a href="">lachaugiang2001@gmail.com</a></p>
+          <p class="footer__lienlac__text"><a href="">Tư liệu nghiên cứu thế giới</a></p>
+        </div>
+      </div>
+      <div class="footer4 col-3 p-0">
+        <h4>Nhận thông báo mới nhất</h4>
+        <form action="" method="post">
+          <div>
+            <input type="email" name="footerEmail" id="footerEmail" placeholder="email@gmail.com">
+            <button type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path
+                  d="M6.29602 3.40603C3.91012 2.30484 1.36183 4.58567 2.19279 7.07859L3.45424 10.8197C3.59136 11.2263 3.97267 11.5002 4.40182 11.5002H13C13.5523 11.5002 14 11.9479 14 12.5002C14 13.0524 13.5523 13.5002 13 13.5002H4.40182C3.97267 13.5002 3.59136 13.774 3.45424 14.1806L2.19281 17.9217C1.36183 20.4147 3.91012 22.6955 6.29603 21.5943L20.0983 15.2241C22.422 14.1516 22.422 10.8488 20.0983 9.77632L6.29602 3.40603Z"
+                  fill="#FCFCFD" />
+              </svg></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="d-flex justify-content-between align-items-center">
+      <p>Copyright&copy; 2023</p>
+      <p>User Terms & Conditions | Privacy Policy</p>
+      <div class="px-5"></div>
+    </div>
+  </footer>
+  <!-- jquery -->
+  <script src="../js/jquery-3.7.1.js"></script>
+  <!-- jquery waypoin -->
+  <script src="../js/jquery.waypoints.js"></script>
+  <!-- owl carousel js -->
+  <script src="../js/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: false,
+      nav: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+  <!-- fontawesome js -->
+  <script defer src="../assets/fontawesome-free-6.5.1-web/js/brands.js"></script>
+  <script defer src="../assets/fontawesome-free-6.5.1-web/js/solid.js"></script>
+  <script defer src="../assets/fontawesome-free-6.5.1-web/js/brands.js"></script>
+  <!-- Bootstrap 5 js -->
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <!-- main js -->
+  <script src="../js/main.js"></script>
+</body>
+
+</html>

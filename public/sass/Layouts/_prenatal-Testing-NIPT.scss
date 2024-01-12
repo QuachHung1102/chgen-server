@@ -1,0 +1,11 @@
+.prenatal-Testing-NIPT {
+  margin-top: $mg-32;
+  .prenatal-Testing-NIPT-title {
+    font-family: "Brygada 1918", "arial";
+    @include styleText($color-blue-0, $fs-2rem, $fw-700);
+  }
+  .prenatal-Testing-NIPT-text {
+    padding-bottom: $pd-30 0;
+    @include styleText($color-black-0, $fs-1rem, $fw-400);
+  }
+}

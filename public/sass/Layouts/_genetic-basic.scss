@@ -1,0 +1,40 @@
+.genetic-basic-content {
+  .genetic-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color-gray-0;
+    text-align: center;
+    padding: 0;
+    gap: $mg-10;
+    cursor: pointer;
+    p {
+      @include styleText($color-black-0, $fs-13, $fw-400);
+      padding: 0;
+      margin: 0;
+    }
+    i {
+      font-size: $fs-36;
+    }
+  }
+  .container-content-top, .container-content-bottom{
+    height: 50%;
+  }
+}
+@include responsive("small"){
+  .genetic-basic-content {
+    height: 75vh;
+  }
+}
+
+@include responsive("medium"){
+  .genetic-basic-content {
+    height: 50vh;
+  }
+}
+@include responsive("large"){
+  .genetic-basic-content {
+    height: 25vh;
+  }
+}

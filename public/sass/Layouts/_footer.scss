@@ -1,0 +1,50 @@
+footer {
+  background-color: $color-blue-0;
+  padding: $pd-40;
+  margin-top: $mg-70;
+  .footer__container {
+    .footer1 {
+      .footer1__icon {
+      }
+    }
+    .footer4 {
+      form {
+        border-radius: $border-radius-15px;
+        height: 3rem;
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          column-gap: $mg-10;
+          height: 100%;
+          input {
+            background-color: $color-white-0;
+            border-radius: $border-radius-15px;
+            height: 30px;
+            border: 1px solid $color-black-0;
+            padding: 0 $pd-10;
+            height: 75%;
+          }
+          button {
+            border-radius: 50%;
+            padding: $pd-5;
+            border: 1px solid $color-black-0;
+          }
+        }
+      }
+    }
+  }
+}
+
+p {
+  @include styleText($color-black-0, $fs-15, $fw-400);
+  margin: $mg-25 0;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  // width: 100px;
+  a {
+    text-decoration: none;
+    color: $color-black-0;
+  }
+};

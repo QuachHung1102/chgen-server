@@ -1,0 +1,66 @@
+.carousel__1 {
+  margin: $mg-25 $mg-70;
+  .carousel__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: $mg-40;
+    height: 50%;
+    h2 {
+      font-family: "Brygada 1918";
+      @include styleText($color-black-0, $fs-40, $fw-700);
+      span {
+        color: $color-blue-0;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .carousel__header__2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $mg-40;
+    height: 50%;
+    h2 {
+      font-family: "Brygada 1918";
+      @include styleText($color-blue-0, $fs-40, $fw-700);
+      span {
+        color: $color-blue-0;
+      }
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  #carouselExampleControls {
+    .carousel-inner {
+      border-radius: $border-radius-55px;
+      .carousel-item {
+        .carousel__itemContent {
+          align-items: center;
+          justify-content: center;
+          background-color: $color-pink-0;
+          padding: $pd-40;
+          .carousel__itemContent__right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            img {
+              height: 250px;
+              width: 250px;
+            }
+          }
+          .carousel__itemText {
+            width: 40vw;
+          }
+        }
+      }
+    }
+    &:hover {
+      background-image: url("./");
+    }
+  }
+}

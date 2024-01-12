@@ -1,0 +1,86 @@
+.helpFull {
+  margin-top: $mg-70;
+  text-align: center;
+  .helpFull__head {
+    margin: auto;
+    margin-bottom: $mg-40;
+    width: 60%;
+  }
+  .helpFull__body {
+    margin: $mg-25 0;
+    .helpFull__cards {
+      justify-content: center;
+      column-gap: $mg-70;
+      .helpFull__card {
+        display: flex;
+        width: 200px;
+        height: 225px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        border-radius: $border-radius-15px;
+        transition: all .5s;
+        .helpFull__card__content {
+          width: 200px;
+          background-color: $color-black-0;
+          color: $color-white-0;
+          align-self: flex-end;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: $pd-5 0;
+          border-end-end-radius: $border-radius-15px;
+          border-end-start-radius: $border-radius-15px;
+          .nst {
+            @include styleText($color-white-0, $fs-12, $fw-400);
+            margin: 0;
+            padding: 0;
+          }
+          .hoiChung {
+            @include styleText($color-blue-0, $fs-12, $fw-400);
+            margin: 0;
+            padding: 0;
+          }
+        }
+        .helful__content__after {
+          display: none;
+          height: 225px;
+          border-radius: $border-radius-15px;
+          padding: $pd-20;
+          background-color: transparent;
+          transition: all .5s;
+          transform: rotateY(180deg);
+          p {
+            padding: 0;
+            margin: 0;
+            @include styleText($color-white-0, $fs-12, $fw-400);
+          }
+        }
+        &:hover {
+          transform-origin: center top;
+          transform: rotateY(180deg);
+          .helful__content__after {
+            background-color: $color-blue-0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+          }
+          .helful__content__before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .helpFull__footer {
+    margin-top: $mg-40;
+    a {
+      &:hover {
+        i {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+}

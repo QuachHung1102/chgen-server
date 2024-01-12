@@ -1,0 +1,89 @@
+.banner {
+	// background-image: url(.././img/cover.jpg);
+	// @extend %backgroundImg;
+	height: 500px;
+	position: relative;
+	.banner__content {
+		max-width: 900px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		h1 {
+			@include styleText($color-blue-0, $fs-64, $fw-700);
+			line-height: 124%;
+		}
+		p {
+			@include styleText($color-black-0, $fs-24, $fw-600);
+			padding: $pd-10 0;
+		}
+		.banner__form {
+			@include styleFormSearch($color-blue-1, $color-blue-0, $color-blue-0, $color-black-0);
+		}
+	}
+
+	@include responsive("small") {
+		.banner__content {
+			h1 {
+				@include styleText($color-blue-0, $fs-24, $fw-700);
+				line-height: 110%;
+			}
+			p {
+				@include styleText($color-black-0, $fs-15, $fw-600);
+				padding: $pd-10 0;
+			}
+		}
+	}
+	@include responsive("medium") {
+		.banner__content {
+			max-width: 900px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			h1 {
+				@include styleText($color-blue-0, $fs-36, $fw-700);
+				line-height: 110%;
+			}
+			p {
+				@include styleText($color-black-0, $fs-16, $fw-600);
+				padding: $pd-10 0;
+			}
+		}
+	}
+	@include responsive("large") {
+		.banner__content {
+			max-width: 900px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			h1 {
+				@include styleText($color-blue-0, $fs-36, $fw-700);
+				line-height: 110%;
+			}
+			p {
+				@include styleText($color-black-0, $fs-16, $fw-600);
+				padding: $pd-10 0;
+			}
+		}
+	}
+	@include responsive("extra-large") {
+		.banner__content {
+			max-width: 900px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+			h1 {
+				@include styleText($color-blue-0, $fs-40, $fw-700);
+				line-height: 124%;
+			}
+			p {
+				@include styleText($color-black-0, $fs-18, $fw-600);
+				padding: $pd-20 0;
+			}
+		}
+	}
+}

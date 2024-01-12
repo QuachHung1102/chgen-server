@@ -1,0 +1,18 @@
+.detail-content {
+  p {
+    font-size: $fs-1rem;
+    span {
+      text-decoration: dashed;
+      color: $color-blue-0;
+      font-style: italic;
+    }
+  }
+  img {
+    height: 400px;
+  }
+  .nst-detail-content {
+    h4 {
+      color: $color-yelow-0;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// file này chỉ chứa đường dẫn tới các file con
+// Chỉ cần biên dịch file này!
+// Các file phải được import theo các thứ tự nhất định
+
+// helper
+@import "./Helper/variables";
+@import "./Helper/mixin";
+@import "./Helper/extend";
+
+// vendors
+// base
+@import "./Base/reset";
+@import "./Base/customizes";
+
+// layout
+@import "./Layouts/header";
+@import "./Layouts/banner";
+@import "./Layouts/intro";
+@import "./Layouts/carousel__1";
+@import "./Layouts/homepageContent1";
+@import "./Layouts/helpful";
+@import "./Layouts/help";
+@import "./Layouts/owlCarousel1";
+@import "./Layouts/footer";
+@import "./Layouts/reproductive-education-intro";
+@import "./Layouts/prenatal-Testing-NIPT";
+@import "./Layouts/navigation-info";
+@import "./Layouts/table-infomation";
+@import "./Layouts/details-content.scss";
+@import "./Layouts/genetic-library.scss";
+@import "./Layouts/genetic-basic";
+// components
+@import "./Components/button";
+// pages
+@import "./Pages/home";
+
+// themes

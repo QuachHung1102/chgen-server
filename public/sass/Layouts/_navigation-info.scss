@@ -1,0 +1,37 @@
+.navigation-info {
+  .navigation-info-top {
+    .navigation-info-top-right {
+      .navigation-info-item-link {
+        display: inline-block;
+        padding: $pd-10;
+        @include styleText($color-black-0, $fs-16, $fw-400);
+        &:hover {
+          @include styleText($color-yelow-0, $fs-16, $fw-400);
+        }
+      }
+      .navigation-info-item-link-active {
+        @include styleText($color-yelow-0, $fs-16, $fw-400);
+      }
+    }
+    .navigation-info-top-left {
+      .navigation-info-item-seeAll {
+        @include styleText($color-black-0, $fs-18, $fw-600);
+      }
+    }
+  }
+  .navigation-info-bottom {
+    .navigation-info-bottom-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .navigation-info-bottom-link {
+        display: inline-block;
+        text-align: center;
+        white-space: nowrap; /* Ngăn chữ xuống dòng */
+        overflow: hidden; /* Ẩn phần văn bản bị tràn */
+        text-overflow: ellipsis; /* Thêm dấu ... */
+        width: 90%; /* Độ rộng cố định */
+      }
+    }
+  }
+}

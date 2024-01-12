@@ -1,0 +1,94 @@
+.intro__section {
+  margin-top: $mg-70;
+  overflow: hidden;
+  .intro__content {
+    position: relative;
+    .intro__title {
+      display: flex;
+      justify-content: center;
+      .intro__imgTitle {
+        z-index: 2;
+        width: 25vw;
+        padding: $pd-10;
+      }
+    }
+    .intro__protect {
+      box-shadow: 0px 40px 246px 0px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .intro__img {
+        background: $color-blue-0;
+        border-radius: $border-radius-55px;
+        padding: $pd-10;
+        width: 50vw;
+        z-index: 2;
+      }
+      .intro__item {
+        display: inline-block;
+        background-color: $color-blue-2;
+        text-align: center;
+        padding: $pd-10 $pd-40;
+        border-radius: 50px;
+        transition-duration: .5s;
+        h2 {
+          @include styleText($color-white-0, $fs-24, $fw-600);
+          padding: 0;
+          margin: 0;
+        }
+        p {
+          @include styleText($color-white-0, $fs-12, $fw-600);
+          padding: 0;
+          margin: 0;
+          word-break: break-word;
+        }
+        &:hover {
+          background-color: $color-black-0;
+        }
+      }
+      .intro__item1 {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        z-index: 2;
+      }
+      .intro__item2 {
+        position: absolute;
+        top: 55%;
+        left: 18%;
+        z-index: 2;
+      }
+      .intro__item3 {
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        z-index: 2;
+      }
+      .intro__item4 {
+        position: absolute;
+        top: 40%;
+        right: 10%;
+        z-index: 2;
+      }
+      .intro__item5 {
+        position: absolute;
+        top: 65%;
+        right: 10%;
+        z-index: 2;
+      }
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      background-color: $color-yelow-0;
+      height: 50vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+    
+  }
+}

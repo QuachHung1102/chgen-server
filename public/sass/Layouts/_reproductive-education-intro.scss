@@ -1,0 +1,120 @@
+.education-intro {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.53)), url("../img/pregnent1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .container-fluid {
+    .education-intro-contents {
+      padding-top: $pd-100;
+      padding-bottom: $pd-100;
+      .education-intro-content {
+        transition: all 3s;
+        border-radius: $border-radius-15px;
+        padding: 0 $pd-20;
+        // background-color: transparent;
+        .education-intro-title {
+          font-family: "Brygada 1918", "arial";
+          padding-top: $pd-20;
+          @include styleText($color-yelow-0, $fs-2rem, $fw-700);
+        }
+        .education-intro-text {
+          padding: $pd-20 0;
+          transition: all 2s;
+          @include styleText($color-white-0, $fs-1rem, $fw-400);
+        }
+        // &:hover {
+        //   background-color: rgba(0, 0, 0, 0.7);
+        //   .education-intro-text {
+        //     @include styleText($color-white-0, $fs-1rem, $fw-400);
+        //   }
+        // }
+      }
+    }
+  }
+}
+.education-intro-nav {
+  .active {
+    background-color: $color-yelow-0;
+    font-weight: 600;
+  }
+}
+
+.gen-intro {
+  height: 50vh;
+  background: url("../img/gen-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .container-fluid {
+    .gen-intro-contents {
+      padding-top: $pd-100;
+      padding-bottom: $pd-100;
+      .gen-intro-content {
+        transition: all 3s;
+        border-radius: $border-radius-15px;
+        padding: 0 $pd-20;
+        // background-color: transparent;
+        .gen-intro-title {
+          font-family: "Brygada 1918", "arial";
+          padding-top: $pd-20;
+          @include styleText($color-yelow-0, $fs-2rem, $fw-700);
+        }
+        .gen-intro-text {
+          padding: $pd-20 0;
+          transition: all 2s;
+          @include styleText($color-white-0, $fs-1rem, $fw-400);
+        }
+        // &:hover {
+        //   background-color: rgba(0, 0, 0, 0.7);
+        //   .gen-intro-text {
+        //     @include styleText($color-white-0, $fs-1rem, $fw-400);
+        //   }
+        // }
+      }
+    }
+  }
+}
+.gen-intro2 {
+  height: 50vh;
+  background: url("../img/gen-background-2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .container-fluid {
+    .gen-intro-contents {
+      padding-top: $pd-100;
+      padding-bottom: $pd-100;
+      .gen-intro-content {
+        transition: all 3s;
+        border-radius: $border-radius-15px;
+        padding: 0 $pd-20;
+        // background-color: transparent;
+        .gen-intro-title {
+          font-family: "Brygada 1918", "arial";
+          padding-top: $pd-20;
+          @include styleText($color-yelow-0, $fs-2rem, $fw-700);
+        }
+        .gen-intro-text {
+          padding: $pd-20 0;
+          transition: all 2s;
+          @include styleText($color-white-0, $fs-1rem, $fw-400);
+        }
+        // &:hover {
+        //   background-color: rgba(0, 0, 0, 0.7);
+        //   .gen-intro-text {
+        //     @include styleText($color-white-0, $fs-1rem, $fw-400);
+        //   }
+        // }
+      }
+    }
+  }
+}
+.gen-intro-nav {
+  .active {
+    background-color: $color-yelow-0;
+    font-weight: 600;
+  }
+}

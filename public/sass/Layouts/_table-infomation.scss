@@ -1,0 +1,30 @@
+.table-infomation {
+  .table {
+    caption {
+      @include styleText($color-blue-0, $fs-2rem, $fw-700);
+      font-family: "Brygada 1918";
+      caption-side: top;
+      margin-bottom: $mg-25;
+    }
+    .table-infomation-head {
+    }
+    .table-infomation-body {
+      tr {
+        .table-head-column {
+          text-decoration: none;
+          &:hover {
+            text-decoration: dashed;
+          }
+        }
+        .table-column-data2 {
+          color: $color-yelow-1;
+          text-decoration: none;
+          &:hover {
+            color: $color-yelow-0;
+            text-decoration: dashed;
+          }
+        }
+      }
+    }
+  }
+}
